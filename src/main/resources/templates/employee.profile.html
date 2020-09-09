@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Muestra una ID</title>
+</head>
+<body>
+    <ul th:unless="${employee == null}">
+        <li th:text="${employee.first_name}"></li>
+        <li th:text="${employee.last_name}"></li>
+        <li th:text=${employee.salary}></li>
+    </ul>
+<H2 th:if="${employee==null}">Este usuario no existe, EMO SIO ENGAÑAO</H2>
+</body>
+</html>
